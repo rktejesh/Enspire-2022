@@ -1,0 +1,15 @@
+{
+  "short_name": "Enspire 2022",
+  "name": "Enspire 2022",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#111111",
+  "background_color": "#111111"
+}

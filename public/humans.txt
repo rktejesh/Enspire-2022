@@ -1,0 +1,51 @@
+
+███████╗███╗░░██╗░██████╗██████╗░██╗██████╗░███████╗            
+██╔════╝████╗░██║██╔════╝██╔══██╗██║██╔══██╗██╔════╝            
+█████╗░░██╔██╗██║╚█████╗░██████╔╝██║██████╔╝█████╗░░            
+██╔══╝░░██║╚████║░╚═══██╗██╔═══╝░██║██╔══██╗██╔══╝░░            
+███████╗██║░╚███║██████╔╝██║░░░░░██║██║░░██║███████╗            
+╚══════╝╚═╝░░╚══╝╚═════╝░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝            
+                         Hand-crafted 2022
+
+_______________________________________________________________________________
+
+PEOPLE
+
+This website was hand-crafted by Ecell development team
+
+Karthik S
+Full stack developer, Blockchain enthusiast
+https://github.com/KarthikS373
+
+Palash Baderia
+Web developer 
+https://github.com/PalashB01
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Next js
+https://nextjs.org/
+
+Three js
+https://threejs.org/
+
+Postcss
+https://postcss.org/
+
+Github
+https://github.com/
+
+_______________________________________________________________________________
+
+ASSETS
+
+Google fonts
+https://fonts.google.com/
+
+Icons & SVG
+https://icons8.com/
+
+Images
+https://unsplash.com/

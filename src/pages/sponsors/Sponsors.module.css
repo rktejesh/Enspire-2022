@@ -1,0 +1,25 @@
+.uses {
+  margin-top: -25px;
+  --maxWidthL: var(--maxWidthM);
+}
+
+.section {
+  opacity: 0;
+  padding-top: var(--space2XL);
+  padding-bottom: var(--space2XL);
+  margin-top: var(--space2XL);
+
+  &:global {
+    animation: fadeIn 1s ease 1s forwards;
+  }
+
+  & + & {
+    margin-top: 0;
+  }
+}
+
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4em 2rem;
+}

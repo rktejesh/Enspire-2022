@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  width: 70%;
+  padding: auto;
+  margin: auto;
+  gap: 12px;
+}
+
+.card {
+  border: 0.5px solid whitesmoke;
+  background-color: #111;
+  padding: 22px;
+  width: max-content;
+  border-radius: 18px;
+
+  &:hover {
+    background-color: rgba(69, 69, 69, 0.3);
+  }
+}
+
+.link {
+  border-radius: 15px;
+  display: inline-block;
+  width: min-content;
+}
+
+.card img {
+  border-radius: 16px;
+}
+
+.card .text {
+  margin-top: 18px;
+}

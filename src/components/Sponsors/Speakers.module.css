@@ -1,0 +1,54 @@
+.container_right {
+  display: flex;
+  padding-top: 12px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap-reverse;
+}
+
+.container_left {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 3;
+  transform: translateY(-12px);
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.desc {
+  font-size: 1.01rem;
+  max-width: 380px;
+  min-width: 360px;
+  position: relative;
+}
+
+.desc::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background-color: #fe8300;
+  height: 5px;
+  width: 60%;
+}
+
+.image {
+  width: min-content;
+  flex: 1;
+}
+
+.img {
+  border: 5px solid #fe8300;
+  object-fit: cover;
+}
