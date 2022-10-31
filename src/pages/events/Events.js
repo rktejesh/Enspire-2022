@@ -121,8 +121,8 @@ export const Events = ({ posts }) => {
   return (
     <article className={styles.articles}>
       <Meta
-        title="Articles"
-        description="A collection of technical design and development articles. May contain incoherent ramblings."
+        title="Events"
+        description="The set of events being hosted at Enspire"
       />
       <Section className={styles.content}>
         {!isSingleColumn && <div className={styles.article}>{postList}</div>}
