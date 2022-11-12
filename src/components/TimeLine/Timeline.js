@@ -4,8 +4,6 @@ import {
   Events,
   UrlButton,
   ImageEvent,
-  TextEvent,
-  YouTubeEvent,
   createTheme,
   themes,
 } from '@merc/react-timeline';
@@ -100,32 +98,160 @@ const TimeLine = () => {
       }}
     >
       <Events>
-        <TextEvent date="1/12/22" text="Desc of event" marker={() => MyMarker(themeId)} />
-
-        <TextEvent date="1/12/22" text="Desc of event" marker={() => MyMarker(themeId)} />
-
         <ImageEvent
-          date="4/12/22"
-          text="Events"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIObT2wfc7vCHpR5IMpI3jKg84oYPR_4bXAA&usqp=CAU"
+          date="03/12/22"
+          text="Startup Expo"
+          src="/StartUpExpo.jpeg"
           alt="Events"
-          credit="Need contents"
+          credit="Registeration Link"
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="https://unsplash.com/search/photos/event">
+            <UrlButton href="https://unstop.com/competition/startup-expo-indian-institute-of-information-technology-iiit-lucknow-467030">
               Unstop link
             </UrlButton>
           </div>
         </ImageEvent>
-
-        <YouTubeEvent
-          date="6/12/22"
-          id="yg-_-ZXaaXE"
-          name="Teasers / trailer"
-          text="Need contents"
+        <ImageEvent
+          date="10/11/22"
+          text="Million Dollar Idea"
+          src="/MillionDollarIdea.jpeg"
+          alt="Events"
+          credit="Registeration Link"
           marker={() => MyMarker(themeId)}
-        />
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="02/12/22"
+          text="Find X"
+          src="/FindX.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="10/11/22"
+          text="Avenge the Fallen"
+          src="/AvengeTheFallen.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="https://unstop.com/competition/avenge-the-fallen-indian-institute-of-information-technology-iiit-lucknow-487259">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="24/11/22"
+          text="Meme For Marketing"
+          src="/MemeForMarketing.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="30/11/22"
+          text="E-ship Quiz"
+          src="/EshipQuiz.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="01/12/22"
+          text="Mystery Rooms"
+          src="/MysteryRooms.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="02/12/22"
+          text="IPL Auction"
+          src="/IPLAuction.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="02/12/22"
+          text="Mystery Of Groups"
+          src="/MysteryGroups.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="01/12/22"
+          text="Sell Out"
+          src="/SellOut.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="#">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
+        <ImageEvent
+          date="01/12/22"
+          text="Win On StockPe"
+          src="/WinOnStockPe.jpeg"
+          alt="Events"
+          credit="Registeration Link"
+          marker={() => MyMarker(themeId)}
+        >
+          <div>
+            <UrlButton href="https://unstop.com/competition/win-on-stockpe-mock-trading-competition-indian-institute-of-information-technology-iiit-lucknow-483702">
+              Unstop link
+            </UrlButton>
+          </div>
+        </ImageEvent>
       </Events>
     </Timeline>
   );
