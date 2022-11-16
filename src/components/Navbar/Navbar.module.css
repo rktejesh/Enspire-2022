@@ -236,13 +236,18 @@
 }
 
 
-@media screen and (max-height: 810px){
+@media screen and (max-height: 853px){
   .navLink{
   padding: var(--spaceS);
   }
 }
-@media screen and (max-height: 724px){
+@media screen and (max-height: 754px){
   .navLink{
-  padding: 2.2%;
+  padding: 1.2%;
+  }
+}
+@media screen and (max-height: 707px){
+  .navLink{
+  padding: 0.9%;
   }
 }
