@@ -121,9 +121,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -135,7 +133,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
+            <UrlButton href="https://unstop.com/p/find-x-indian-institute-of-information-technology-iiit-lucknow-505048">
               Unstop link
             </UrlButton>
           </div>
@@ -163,9 +161,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -177,9 +173,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -191,9 +185,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -205,9 +197,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -219,9 +209,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
@@ -233,9 +221,7 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">
-              Unstop link
-            </UrlButton>
+            <UrlButton href="#">Unstop link</UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent

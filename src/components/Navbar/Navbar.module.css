@@ -233,3 +233,15 @@
     transform: none;
   }
 }
+
+
+@media screen and (max-height: 810px){
+  .navLink{
+  padding: var(--spaceS);
+  }
+}
+@media screen and (max-height: 724px){
+  .navLink{
+  padding: 2.2%;
+  }
+}
