@@ -5,6 +5,7 @@ import { Intro } from 'layouts/Home/Intro';
 import { EventSummary } from 'layouts/Home/EventSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
+import Image from 'next/image';
 
 const disciplines = ['Ignite the spark', '2022'];
 
@@ -70,9 +71,14 @@ export const Home = () => {
         visible={visibleSections.includes(eventOne.current)}
         index={1}
         title="Educational workshops"
+        preview={
+          <div style={{ transform: 'rotate(-2deg)' }}>
+            <Image src={'/workshop.png'} height={420} width={600} alt="Merch" />{' '}
+          </div>
+        }
         description="Get first hand experience and learn from quality workshops which fare across a wide area of interests."
         buttonText="view workshops"
-        buttonLink="./events"
+        buttonLink="./"
         type="right"
       />
       <EventSummary
@@ -82,6 +88,11 @@ export const Home = () => {
         visible={visibleSections.includes(eventTwo.current)}
         index={2}
         title="Challenging Events"
+        preview={
+          <div style={{ transform: 'rotate(12deg)' }}>
+            <Image src={'/events.jpeg'} height={450} width={450} alt="Merch" />{' '}
+          </div>
+        }
         description="Unleash your competitive spirit by participating in 20+ competitions and get a chance to win exciting prices."
         buttonText="View events"
         buttonLink="./events"
@@ -92,10 +103,11 @@ export const Home = () => {
         sectionRef={eventThree}
         visible={visibleSections.includes(eventThree.current)}
         index={3}
-        title="Inspiring talks"
-        description="Attend inspiring talks by famous personalities"
-        buttonText="View talks"
-        buttonLink={'./events'}
+        title="Exclusive Merch"
+        description="Get exclusive Enspire merch with custom, handmade pieces from right here"
+        preview={<Image src={'/merch.png'} height={500} width={1000} alt="Merch" />}
+        buttonText="Buy Merch"
+        buttonLink={'./'}
         type="right"
       />
       <TimeLine />

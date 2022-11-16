@@ -259,15 +259,15 @@ export const Sponsors = () => {
         <ProjectSection padding="none" className={styles.section}>
           <HeroSectionContent>
             <HeroTextRow width="m">
-              <HeroSectionHeading>Key Points</HeroSectionHeading>
+              {/* <HeroSectionHeading>Key Points</HeroSectionHeading> */}
               <HeroSectionText as="div">
                 <List>
-                  <ListItem>
+                  {/* <ListItem>
                     Short Heading <br />
                     <Link href="#">Something</Link> Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. In error saepe magnam. Inventore eius consequatur
                     cum quae nobis voluptatum natus sequi at, tempore placeat accusamus
-                  </ListItem>
+                  </ListItem> */}
                 </List>
               </HeroSectionText>
             </HeroTextRow>

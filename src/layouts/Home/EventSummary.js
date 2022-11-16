@@ -21,6 +21,7 @@ export const EventSummary = ({
   buttonText,
   buttonLink,
   alternate,
+  preview,
   ...rest
 }) => {
   const [focused, setFocused] = useState(false);
@@ -64,8 +65,14 @@ export const EventSummary = ({
 
   const renderPreview = () => (
     <div className={styles.preview}>
-      {type === 'right' && <>Some TEXT here</>}
-      {type === 'left' && <>Something goes here</>}
+      {preview ? (
+        preview
+      ) : (
+        <>
+          {type === 'right' && <>Some TEXT here</>}
+          {type === 'left' && <>Something goes here</>}
+        </>
+      )}
     </div>
   );
 

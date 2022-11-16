@@ -33,25 +33,26 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(/*`${process.env.NEXT_PUBLIC_API_URL}/message`*/ '', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email.value,
-          message: message.value,
-        }),
-      });
+      console.log(email.value, message.value);
+      // const response = await fetch(/*`${process.env.NEXT_PUBLIC_API_URL}/message`*/ '', {
+      //   method: 'POST',
+      //   mode: 'cors',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     email: email.value,
+      //     message: message.value,
+      //   }),
+      // });
 
-      const responseMessage = await response.json();
+      // const responseMessage = await response.json();
 
-      const statusError = getStatusError({
-        status: response?.status,
-        errorMessage: responseMessage?.error,
-        fallback: 'Error sending...',
-      });
+      // const statusError = getStatusError({
+      //   status: response?.status,
+      //   errorMessage: responseMessage?.error,
+      //   fallback: 'Error sending...',
+      // });
 
       if (statusError) throw new Error(statusError);
 
@@ -65,10 +66,7 @@ export const Contact = () => {
 
   return (
     <Section className={styles.contact}>
-      <Meta
-        title="Contact"
-        description="Send me a message if you’re interested in discussing a project or if you just want to say hi"
-      />
+      <Meta title="Contact" description="Send us a message" />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
           <form className={styles.form} method="post" onSubmit={onSubmit}>
@@ -162,6 +160,17 @@ export const Contact = () => {
             >
               Our team will reach you out soon...
             </Text>
+            <Button
+              secondary
+              iconHoverShift
+              className={styles.completeButton}
+              data-status={status}
+              style={getDelay(tokens.base.durationM)}
+              href="https://discord.com/invite/mGCKYBFWC8"
+              icon="chevronRight"
+            >
+              Community discussions
+            </Button>
             <Button
               secondary
               iconHoverShift
