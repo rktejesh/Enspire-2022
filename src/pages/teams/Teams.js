@@ -258,7 +258,7 @@ export const Teams = () => {
                />
              </div>
              <div className={styles.info}>
-               <div className={styles.name}>Mohit Prajapat</div>
+               <div className={styles.name}>Lakshmi Sharvani</div>
                <div className={styles.details}>Head Of Department</div>
                <div className={styles.social}></div>
              </div>
