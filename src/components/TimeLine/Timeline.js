@@ -73,7 +73,7 @@ const TimeLine = () => {
       backgroundColor: `rgb(${rgbAccent.split(' ')[0]}, ${rgbAccent.split(' ')[1]}, ${
         rgbAccent.split(' ')[2]
       })`,
-      color: 'black',
+      color: 'white',
     },
     marker: {
       borderColor: `rgb(${rgbAccent.split(' ')[0]}, ${rgbAccent.split(' ')[1]}, ${
@@ -86,7 +86,9 @@ const TimeLine = () => {
       })`,
     },
     button: {
-      backgroundColor: 'red',
+      backgroundColor: `rgb(${rgbAccent.split(' ')[0]}, ${rgbAccent.split(' ')[1]}, ${
+        rgbAccent.split(' ')[2]
+      })`,
     },
   });
 
@@ -121,7 +123,9 @@ const TimeLine = () => {
           marker={() => MyMarker(themeId)}
         >
           <div>
-            <UrlButton href="#">Unstop link</UrlButton>
+            <UrlButton href="https://unstop.com/o/wZQK0dA?lb=pweR4gz">
+              Unstop link
+            </UrlButton>
           </div>
         </ImageEvent>
         <ImageEvent
