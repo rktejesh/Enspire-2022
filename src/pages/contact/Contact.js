@@ -14,6 +14,8 @@ import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
+import { db } from '../../config/firebase.config';
+import { addDoc, collection } from 'firebase/firestore';
 
 export const Contact = () => {
   const errorRef = useRef();
@@ -22,6 +24,7 @@ export const Contact = () => {
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
   const [statusError, setStatusError] = useState('');
+  const [messageRef, setMessageRef] = useState('');
   const initDelay = tokens.base.durationS;
 
   const onSubmit = async event => {
@@ -34,27 +37,13 @@ export const Contact = () => {
       setSending(true);
 
       console.log(email.value, message.value);
-      // const response = await fetch(/*`${process.env.NEXT_PUBLIC_API_URL}/message`*/ '', {
-      //   method: 'POST',
-      //   mode: 'cors',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     email: email.value,
-      //     message: message.value,
-      //   }),
-      // });
 
-      // const responseMessage = await response.json();
+      const res = await addDoc(collection(db, 'Enspire-Query'), {
+        email: email.value,
+        message: message.value,
+      });
 
-      // const statusError = getStatusError({
-      //   status: response?.status,
-      //   errorMessage: responseMessage?.error,
-      //   fallback: 'Error sending...',
-      // });
-
-      if (statusError) throw new Error(statusError);
+      setMessageRef(res.id);
 
       setComplete(true);
       setSending(false);
@@ -159,6 +148,9 @@ export const Contact = () => {
               style={getDelay(tokens.base.durationXS)}
             >
               Our team will reach you out soon...
+            </Text>
+            <Text size="0.5" className={styles.reference}>
+              PS: your message ref is {messageRef}
             </Text>
             <Button
               secondary

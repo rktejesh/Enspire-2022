@@ -301,3 +301,8 @@
     animation: fadeIn var(--durationL) ease var(--durationXL) forwards;
   }
 }
+
+.reference {
+  font-style: italic;
+  font-size: x-small;
+}

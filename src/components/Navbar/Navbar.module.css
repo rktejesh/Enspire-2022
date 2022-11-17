@@ -1,5 +1,5 @@
 .navbar {
-  --headerNavFontSize: calc((16 / 16) * 1rem);
+  --headerNavFontSize: calc((16 / 16) * 0.8rem);
 
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--spaceS);
-  width: var(--space2XL);
+  width: calc(var(--space2XL) - 12px);
   height: var(--space2XL);
   color: var(--colorTextLight);
   transition: color var(--durationM) var(--bezierFastoutSlowin);
