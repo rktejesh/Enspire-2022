@@ -1,20 +1,11 @@
 import { Fragment, useEffect, useState } from 'react';
-import { Heading } from 'components/Heading';
 import usesBackgroundPlaceholder from 'assets/images/uses-background-placeholder.jpg';
 import usesBackground from 'assets/videos/trailer.mp4';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { DecoderText } from 'components/DecoderText';
 
-import { Transition } from 'components/Transition';
-
-import {
-  HeroBackground,
-  HeroContainer,
-  HeroHeader,
-  ProjectSection,
-  HeroSectionHeading,
-} from 'layouts/Hero';
+import { HeroBackground, HeroContainer, ProjectSection, HeroSectionHeading } from 'layouts/Hero';
 import styles from './Teams.module.css';
 import { media } from 'utils/style';
 

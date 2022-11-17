@@ -1,21 +1,11 @@
-import React from 'react';
 import { Fragment, useEffect, useState } from 'react';
-import { Heading } from 'components/Heading';
 import usesBackgroundPlaceholder from 'assets/images/uses-background-placeholder.jpg';
 import usesBackground from 'assets/videos/trailer.mp4';
-import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { DecoderText } from 'components/DecoderText';
 import { media } from 'utils/style';
-import { Transition } from 'components/Transition';
 
-import {
-  HeroBackground,
-  HeroContainer,
-  HeroHeader,
-  ProjectSection,
-  HeroSectionHeading,
-} from 'layouts/Hero';
+import { HeroBackground, HeroContainer, ProjectSection } from 'layouts/Hero';
 import styles from './Gallery.module.css';
 
 export const Gallery = () => {
@@ -109,7 +99,7 @@ export const Gallery = () => {
             images.map((items)=>{
               return(
                 <img src={items.pic} key={items.pos} alt=""  className={styles.img}/>
-              )
+              );
             })
            }
           </div>
