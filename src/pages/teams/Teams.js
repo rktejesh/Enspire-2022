@@ -379,7 +379,7 @@ export const Teams = () => {
                 />
               </div>
               <div className={styles.info}>
-                <div className={styles.name}>Palash</div>
+                <div className={styles.name}>Palash Baderia</div>
                 <div className={styles.details}>Member</div>
                 <div className={styles.social}></div>
               </div>
@@ -394,7 +394,7 @@ export const Teams = () => {
               </div>
               <div className={styles.info}>
                 <div className={styles.name}>Milind</div>
-                <div className={styles.details}>Senior Member</div>
+                <div className={styles.details}>Member</div>
                 <div className={styles.social}></div>
               </div>
             </div>
