@@ -11,6 +11,7 @@ import { media } from 'utils/style';
 import styles from './EventSummary.module.css';
 
 export const EventSummary = ({
+  display = true,
   id,
   visible: sectionVisible,
   sectionRef,
@@ -75,6 +76,10 @@ export const EventSummary = ({
       )}
     </div>
   );
+
+  if (!display) {
+    return <Section ref={sectionRef} />;
+  }
 
   return (
     <Section
