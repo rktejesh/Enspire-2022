@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './Intro.module.css';
 
-const ENSPIRE_DATE = '12/03/2022';
+const ENSPIRE_DATE = '12/01/2022';
 
 export const Counter = () => {
   const [countDownData, setCountDownData] = useState({
@@ -24,10 +24,10 @@ export const Counter = () => {
         distance = countDown - now;
 
       setCountDownData(() => ({
-        days: Math.floor(distance / day),
-        hours: Math.floor((distance % day) / hour),
-        minutes: Math.floor((distance % hour) / minute),
-        seconds: Math.floor((distance % minute) / second),
+        days: Math.max(Math.floor(distance / day), 0),
+        hours: Math.max(Math.floor((distance % day) / hour), 0),
+        minutes: Math.max(Math.floor((distance % hour) / minute), 0),
+        seconds: Math.max(Math.floor((distance % minute) / second), 0),
       }));
     });
 
@@ -46,10 +46,11 @@ export const Counter = () => {
           <span className={styles.hours}>{countDownData.hours}</span>Hours
         </li>
         <li>
-          <span className={styles.minutes}>{countDownData.minutes}</span>Minutes
+          <span className={styles.minutes}>{countDownData.minutes}0</span>Minutes
         </li>
         <li>
-          <span className={styles.seconds}>{countDownData.seconds}</span>Seconds
+          <span className={styles.seconds}>{countDownData.seconds}0</span>
+          Seconds
         </li>
       </ul>
     </div>

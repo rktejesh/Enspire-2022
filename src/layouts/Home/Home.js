@@ -72,7 +72,7 @@ export const Home = () => {
         index={1}
         title="Educational workshops"
         preview={
-          <div style={{ transform: 'rotate(-2deg)' }}>
+          <div style={{}}>
             <Image src={'/workshop.png'} height={420} width={600} alt="Merch" />{' '}
           </div>
         }
@@ -89,7 +89,7 @@ export const Home = () => {
         index={2}
         title="Challenging Events"
         preview={
-          <div style={{ transform: 'rotate(12deg)' }}>
+          <div style={{}}>
             <Image src={'/events.jpeg'} height={450} width={450} alt="Merch" />{' '}
           </div>
         }
