@@ -6,6 +6,11 @@ import { EventSummary } from 'layouts/Home/EventSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 import Image from 'next/image';
+import { HeroContainer, HeroHeader } from 'layouts/Hero';
+
+import stockpe from '../../assets/images/stockpe.png';
+import markoknow from '../../assets/images/markoknow.png';
+import insyst from '../../assets/images/insyst.png';
 
 const disciplines = ['Ignite the spark', '2022'];
 
@@ -65,6 +70,17 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <HeroContainer
+        className={styles.uses}
+        data-visible={visibleSections.includes(eventOne.current)}
+      >
+        <HeroHeader title="Our Sponsors" description="" />
+        <div className={styles.sponsors}>
+          <Image src={markoknow} alt="Markoknow" height={180} width={180} />
+          <Image src={stockpe} alt="Stockpe" height={380} width={380} />
+          <Image src={insyst} alt="Insyst" height={180} width={180} />
+        </div>
+      </HeroContainer>
       <EventSummary
         id="workshops"
         sectionRef={eventOne}
