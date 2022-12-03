@@ -11,6 +11,7 @@ import { HeroContainer, HeroHeader } from 'layouts/Hero';
 import stockpe from '../../assets/images/stockpe.png';
 import markoknow from '../../assets/images/markoknow.png';
 import insyst from '../../assets/images/insyst.png';
+import { Heading } from 'components/Heading';
 
 const disciplines = ['Ignite the spark', '2022'];
 
@@ -18,12 +19,13 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
+  const sponsorsRef = useRef();
   const eventOne = useRef();
   const eventTwo = useRef();
   const eventThree = useRef();
 
   useEffect(() => {
-    const sections = [intro, eventOne, eventTwo, eventThree];
+    const sections = [intro, sponsorsRef, eventOne, eventTwo, eventThree];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -72,15 +74,49 @@ export const Home = () => {
       />
       <HeroContainer
         className={styles.uses}
-        data-visible={visibleSections.includes(eventOne.current)}
+        data-visible={visibleSections.includes(sponsorsRef.current)}
       >
-        <HeroHeader title="Our Sponsors" description="" />
+        {/* <HeroHeader title="Title Sponsors" description="" /> */}
+        <Heading> Our Sponsors </Heading>
+        {/* <Image src={markoknow} alt="Markoknow" height={180} width={180} />
+        <Image src={stockpe} alt="Stockpe" height={380} width={380} />
+        <Image src={insyst} alt="Insyst" height={180} width={180} /> */}
+
+        <EventSummary display={false} sectionRef={sponsorsRef} />
         <div className={styles.sponsors}>
-          <Image src={markoknow} alt="Markoknow" height={180} width={180} />
-          <Image src={stockpe} alt="Stockpe" height={380} width={380} />
-          <Image src={insyst} alt="Insyst" height={180} width={180} />
+          <div className={styles.card}>
+            <div className={styles.box}>
+              <Image className={styles.pic} src={markoknow} alt="Markoknow" />
+            </div>
+            <div className={styles.info}>
+              <div className={styles.name}>Markoknow</div>
+              <div className={styles.details}>Education Sponsor</div>
+              <div className={styles.social}>markoknow.com</div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.box}>
+              <Image className={styles.pic} src={insyst} alt="Insyst" />
+            </div>
+            <div className={styles.info}>
+              <div className={styles.name}>Insyst Labs</div>
+              <div className={styles.details}>Title Sponsor</div>
+              <div className={styles.social}>insystlabs.com</div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.box}>
+              <Image className={styles.pic} src={stockpe} alt="Stockpe" />
+            </div>
+            <div className={styles.info}>
+              <div className={styles.name}>Stockpe</div>
+              <div className={styles.details}>Event Sponsor</div>
+              <div className={styles.social}>Stockation Private Limited</div>
+            </div>
+          </div>
         </div>
       </HeroContainer>
+
       <EventSummary
         id="workshops"
         sectionRef={eventOne}
